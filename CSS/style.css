@@ -1,0 +1,121 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 44px 62px;
+  max-width: 1440px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 61px;
+  height: 19px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+a:hover {
+  color: #0065fc;
+}
+.menu {
+  padding: 20px;
+}
+.menu:hover {
+  border-top: 2px #0065fc solid;
+  color: #0065fc;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.searchbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.filters h2 {
+  margin-right: 40px;
+}
+
+.filters-btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.infobar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fa-location-dot {
+  width: 14px;
+  height: 18px;
+  padding: 18px 25px;
+  background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
+}
+
+.fa-info {
+  color: #0065fc;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  width: 24px;
+  height: 24px;
+  padding: 2px 2px;
+  margin: 0 20px;
+  text-align: center;
+  background-color: #d9d9d9;
+  font-size: 12px;
+}
+
+.fa-star {
+  color: #0065fc;
+}
+
+.hebergement {
+  max-width: 880px;
+}
+.hotel-card-top img {
+  width: 246px;
+  height: 124px;
+}
+
+.hotel-card-left img {
+  width: 137px;
+  height: 144px;
+}
+
+.card img {
+  width: 302px;
+  height: 444.51px;
+}
+
+footer {
+  justify-content: space-between;
+}
