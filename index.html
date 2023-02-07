@@ -17,58 +17,60 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header>
-      <img src="/assets/logo/Booki.png" alt="logo Booki" />
-      <nav class="container">
-        <div class="menu"><a href="#hebergement">Hébergements</a></div>
-        <div class="menu"><a href="#activite">Activités</a></div>
+      <nav>
+        <img class="logo" src="/assets/logo/Booki.png" alt="logo Booki" />
+        <ul>
+          <li class="menu"><a href="#hebergement">Hébergements</a></li>
+          <li class="menu"><a href="#activite">Activités</a></li>
+        </ul>
       </nav>
+      <div>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h5>En plein centre ville ou en pleine nature</h5>
+      </div>
     </header>
 
     <main>
-      <section class="top-main">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h5>En plein centre ville ou en pleine nature</h5>
-
-        <form class="searchbar container">
-          <i class="fa-location-dot fa-solid icon-black"></i>
-          <input type="search" id="search-city" />
-          <button type="button" id="Rechercher">Rechercher</button>
-        </form>
-
-        <div class="filters container">
-          <h2>Filtres</h2>
-          <div class="filters-select">
-            <button class="btn-filter" type="button" id="Economique">
-              <i class="fa-solid fa-money-bill-wave icon-filter"></i>
-              Economique
-            </button>
-            <button class="btn-filter" type="button" id="Familial">
-              <i class="fa-solid fa-person icon-filter"></i>
-              Familial
-            </button>
-            <button class="btn-filter" type="button" id="Romantique">
-              <i class="fa-solid fa-heart icon-filter"></i>
-              Romantique
-            </button>
-            <button class="btn-filter" type="button" id="Animaux">
-              <i class="fa-solid fa-dog icon-filter"></i>
-              Animaux autorisés
-            </button>
-          </div>
+      <form class="searchbar container">
+        <i class="fa-location-dot fa-solid"></i>
+        <input type="search" id="search-city" />
+        <button type="button" id="Rechercher">Rechercher</button>
+      </form>
+      <div class="filters container">
+        <h2>Filtres</h2>
+        <div class="filters-select">
+          <button class="btn-filter" type="button" id="Economique">
+            <i class="fa-solid fa-money-bill-wave icon-filter"></i>
+            Economique
+          </button>
+          <button class="btn-filter" type="button" id="Familial">
+            <i class="fa-solid fa-person icon-filter"></i>
+            Familial
+          </button>
+          <button class="btn-filter" type="button" id="Romantique">
+            <i class="fa-solid fa-heart icon-filter"></i>
+            Romantique
+          </button>
+          <button class="btn-filter" type="button" id="Animaux">
+            <i class="fa-solid fa-dog icon-filter"></i>
+            Animaux autorisés
+          </button>
         </div>
-        <div class="infobar container">
-          <i class="fa-solid fa-info"></i>
-          <h5>Plus de 500 logements sont disponibles dans cette ville</h5>
-        </div>
-      </section>
+      </div>
+
+      <div class="infobar container">
+        <i class="fa-solid fa-info"></i>
+        <h5>Plus de 500 logements sont disponibles dans cette ville</h5>
+      </div>
 
       <section class="container" id="hebergement">
         <div class="hotels left">
           <h1 class="part">Hébergements à Marseille</h1>
           <div class="hotels-list">
-            <div class="hotel-card">
+            <a href="#" class="hotel-card">
               <img
                 src="/assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 alt=""
@@ -84,8 +86,8 @@
                   ><i class="fa-solid fa-star greystar"></i>
                 </div>
               </div>
-            </div>
-            <div class="hotel-card">
+            </a>
+            <a href="#" class="hotel-card">
               <img
                 src="/assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt=""
@@ -101,8 +103,8 @@
                   <i class="fa-solid fa-star greystar"></i>
                 </div>
               </div>
-            </div>
-            <div class="hotel-card">
+            </a>
+            <a href="#" class="hotel-card">
               <img
                 src="/assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 alt=""
@@ -118,8 +120,8 @@
                   <i class="fa-solid fa-star greystar"></i>
                 </div>
               </div>
-            </div>
-            <div class="hotel-card">
+            </a>
+            <a href="#" class="hotel-card">
               <img
                 src="/assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                 alt=""
@@ -135,8 +137,8 @@
                   ><i class="fa-solid fa-star greystar"></i>
                 </div>
               </div>
-            </div>
-            <div class="hotel-card">
+            </a>
+            <a href="#" class="hotel-card">
               <img
                 src="/assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                 alt=""
@@ -152,8 +154,9 @@
                   ><i class="fa-solid fa-star greystar"></i>
                 </div>
               </div>
-            </div>
-            <div class="hotel-card">
+            </a>
+
+            <a href="#" class="hotel-card">
               <img
                 src="/assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                 alt=""
@@ -169,17 +172,16 @@
                   ><i class="fa-solid fa-star greystar"></i>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <h2 class="part">Afficher plus</h2>
         </div>
-
         <div class="hotels">
           <h1 class="part">
             Les plus populaires <i class="fa-solid fa-chart-line"></i>
           </h1>
           <div class="hotels-popular">
-            <div class="hotel-card-pop container">
+            <a href="#" class="hotel-card-pop container">
               <img
                 src="/assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                 alt=""
@@ -197,8 +199,8 @@
                   ><i class="fa-solid fa-star greystar"></i>
                 </div>
               </div>
-            </div>
-            <div class="hotel-card-pop container">
+            </a>
+            <a href="#" class="hotel-card-pop container">
               <img
                 src="/assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                 alt=""
@@ -216,8 +218,8 @@
                   ><i class="fa-solid fa-star greystar"></i>
                 </div>
               </div>
-            </div>
-            <div class="hotel-card-pop container">
+            </a>
+            <a href="#" class="hotel-card-pop container">
               <img
                 src="/assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                 alt=""
@@ -235,45 +237,46 @@
                   ><i class="fa-solid fa-star greystar"></i>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="activites" id="activite">
-        <h1>Activités à Marseille</h1>
-        <div class="results-activites container">
-          <div class="card">
-            <img
-              src="/assets/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt=""
-            />
-            <h4>Vieux Port</h4>
-          </div>
-          <div class="card">
-            <img
-              src="/assets/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-              alt=""
-            />
-            <h4>Fort de Pomègues</h4>
-          </div>
-          <div class="card">
-            <img
-              src="/assets/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt=""
-            />
-            <h4>Parc national des Calanques</h4>
-          </div>
-          <div class="card">
-            <img
-              src="/assets/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-              alt=""
-            />
-            <h4>Notre-Dame-de-la-Garde</h4>
+            </a>
           </div>
         </div>
       </section>
     </main>
+
+    <section class="activites" id="activite">
+      <h1>Activités à Marseille</h1>
+      <div class="act-list container">
+        <a href="#" class="act-card">
+          <img
+            src="/assets/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            alt=""
+          />
+          <h4>Vieux Port</h4>
+        </a>
+        <a href="#" class="act-card">
+          <img
+            src="/assets/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+            alt=""
+          />
+          <h4>Fort de Pomègues</h4>
+        </a>
+        <a href="#" class="act-card">
+          <img
+            src="/assets/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            alt=""
+          />
+          <h4>Parc national des Calanques</h4>
+        </a>
+        <a href="#" class="act-card">
+          <img
+            src="/assets/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            alt=""
+          />
+          <h4>Notre-Dame-de-la-Garde</h4>
+        </a>
+      </div>
+    </section>
+
     <footer class="container">
       <div class="footer-col">
         <h3>A propos</h3>

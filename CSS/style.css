@@ -6,11 +6,10 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  margin: 0 50px;
   max-width: 1440px;
-  margin: auto;
-  /* display: flex;
-  flex-direction: column; */
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -24,7 +23,8 @@ h2 {
 
 h3 {
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 700;
+  padding-bottom: 20px;
 }
 
 h4 {
@@ -40,19 +40,37 @@ h5 {
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-  max-width: 1440px;
+  flex-direction: column;
+  /* margin-bottom: 20px; */
 }
 
-header img {
+.logo {
   margin-top: 44px;
   width: 61px;
   height: 19px;
 }
+
 nav {
-  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 63px;
+}
+nav ul {
+  display: flex;
+}
+li {
+  list-style-type: none;
+  padding: 48px 23.5px 0 23.5px;
+  border-top: 2px solid white;
+}
+
+li:hover {
+  border-top: 2px #0065fc solid;
+  color: #0065fc;
+}
+
+li a:hover {
+  color: #0065fc;
 }
 
 a {
@@ -63,21 +81,9 @@ a:link,
 a:visited {
   color: black;
 }
-a:hover {
-  color: #0065fc;
-}
-.menu {
-  padding: 48px 23.5px 0 23.5px;
-  border-top: 2px solid white;
-}
-.menu:hover {
-  border-top: 2px #0065fc solid;
-  color: #0065fc;
-}
 
 .container {
   display: flex;
-  align-items: center;
 }
 
 .fa-info {
@@ -100,10 +106,8 @@ a:hover {
   color: #f2f2f2;
 }
 
-/* Partie Barre de recherche */
-
 .searchbar {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -141,6 +145,7 @@ a:hover {
 .filters {
   margin-bottom: 20px;
   flex-wrap: nowrap;
+  align-items: center;
 }
 .filters h2 {
   margin-right: 20px;
@@ -175,8 +180,6 @@ a:hover {
   align-items: center;
 }
 
-/* Partie Résultats des recherches */
-
 .hotels {
   background-color: #f2f2f2;
   height: 626px;
@@ -184,7 +187,7 @@ a:hover {
 }
 
 .left {
-  max-width: 880px;
+  min-width: 880px;
   margin-right: 40px;
 }
 
@@ -203,6 +206,7 @@ a:hover {
   margin: 10px 15.5px;
   border-radius: 20px;
 }
+
 .hotel-card img {
   max-width: 246px;
   height: 124px;
@@ -259,12 +263,57 @@ a:hover {
 
 .details-pop {
   margin-bottom: 44px;
+  padding-top: 16px;
 }
 
-/*Partie Activités */
+.activites {
+  margin-top: 60px;
+  margin-bottom: 61px;
+}
 
-/* Partie Footer */
+.activites h1 {
+  margin-bottom: 19px;
+}
+
+.activites h4 {
+  width: 302px;
+  height: 56px;
+  padding-top: 20px;
+  padding-left: 19px;
+  border-radius: 0 20px 20px;
+}
+
+.act-card {
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.act-card img {
+  width: 302px;
+  height: 444.5px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.act-list {
+  max-width: 1440px;
+  justify-content: space-between;
+}
 
 footer {
-  justify-content: space-between;
+  padding-top: 45px;
+
+  background-color: #f2f2f2;
+  padding-left: 70px;
+  height: 225px;
+}
+
+.footer-col {
+  margin-right: 200px;
+}
+
+.footer-col p {
+  padding-bottom: 12px;
 }
