@@ -1,0 +1,26 @@
+@media screen and (max-width: 992px) {
+  .accommodations {
+    flex-direction: column;
+  }
+
+  .results {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .most-popular {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .hotels-popular-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .hotel-card-pop {
+    width: 30%;
+  }
+
+  .act-card img {
+    height: 267px;
+  }
+}
