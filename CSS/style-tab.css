@@ -23,4 +23,8 @@
   .act-card img {
     height: 267px;
   }
+
+  footer {
+    padding-right: 10px;
+  }
 }

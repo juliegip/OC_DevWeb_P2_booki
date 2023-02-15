@@ -6,7 +6,8 @@
   .top,
   .searchbar,
   .filters,
-  .infobar {
+  .infobar,
+  .activities {
     padding: 0 1.5em;
   }
 
